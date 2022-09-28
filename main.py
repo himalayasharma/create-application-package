@@ -1,4 +1,3 @@
-from email.mime import application
 import os
 from cover_letter import cover_letter
 from merge_pdf import merge_pdf
@@ -29,9 +28,9 @@ def main():
     # Create cover letter
     cover_letter(role, company, domain, greeting, cover_letter_path)
     # Copy resume and change name
-    shutil.copyfile('static/resume.pdf', resume_path)
+    shutil.copyfile('/home/himalaya/Desktop/coding/create-application-package/static/resume.pdf', resume_path)
     # Copy transcript and change name
-    shutil.copyfile('static/transcript.pdf', transcript_path)
+    shutil.copyfile('/home/himalaya/Desktop/coding/create-application-package/static/transcript.pdf', transcript_path)
     # Merge transcript, cover letter and transcript
     merge_pdf(resume_path, cover_letter_path, transcript_path, application_package_path)
 
