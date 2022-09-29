@@ -15,7 +15,7 @@ def main():
     date_ll = today.strftime("%b-%d-%Y")
     
     # Declare paths
-    root_dir = f"/home/himalaya/Desktop/application/Full-time jobs/{date_ll}-{company}"
+    root_dir = f"/home/himalaya/Desktop/FT/Jobs applied/{date_ll}-{company}"
     cover_letter_path = os.path.join(root_dir, f"Himalaya Sharma {company} Cover Letter.pdf")
     resume_path = os.path.join(root_dir, f"Himalaya Sharma {company} Resume.pdf")
     transcript_path = os.path.join(root_dir, f"Himalaya Sharma {company} UWaterloo Transcript.pdf")
